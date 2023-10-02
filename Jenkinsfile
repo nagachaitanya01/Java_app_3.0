@@ -77,7 +77,7 @@ pipeline{
             steps{
                script{
                    
-                   jarPush()
+                   sh 'if rt upload --url http://54.236.8.228:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar --access-token cmVmdGtuOjAxOjAwMDAwMDAwMDA6c3FZRzRBQ1FmeDhUaGEyRnFMNTk3TWhJVmo5 target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar Java_app_3.0/'
                }
             }
         }
